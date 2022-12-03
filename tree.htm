@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- 
+    CSCI 2408 Computer Graphics Fall 2022 
+    (c)2022 by Yusif Gurbanov 
+    Submitted in partial fulfillment of the requirements of the course.
+-->
+<html>
+    <head>
+        <title>Homework 2 - Working with 3D models</title>     
+    </head>
+    <style>
+
+    </style>
+     
+    <div class="coordinates">
+        <input id="ax" type="number" placeholder="ax angle">
+        <input id="az" type="number" placeholder="az angle">
+        <input id="k1" type="number" placeholder="k1">
+        <input id="m2" type="number" placeholder="m2 factor">
+        <br>
+        <input id="bx" type="number" placeholder="bx angle">
+        <input id="bz" type="number" placeholder="bz angle">
+        <input id="k2" type="number" placeholder="k2">
+        <input id="m3" type="number" placeholder="m3 factor">
+        <br>
+        <input id="cx" type="number" placeholder="cx angle">
+        <input id="cz" type="number" placeholder="cz angle">
+        <input id="k3" type="number" placeholder="k3">
+        <input id="length" type="number" placeholder="initial length">
+        <br>
+        <input id="limit" type="number" placeholder="stop level">
+        <input id="text" type="text" placeholder="name of your file">
+        Please, initially submit your inputs and then generate a tree.
+        <button id="submit" type="submit">Submit inputs</button>
+        <button id="generate" type="submit">Generate a tree</button>
+        <br>
+        <input id="file-open" type="file" accept=".obj"/>   
+        <button id="proc-button" type="button">Process the image</button>
+    </div>
+    
+    <body >
+        <center>
+            <canvas id="gl-canvas" width="800" height="600">
+            Sorry ... your browser doesn't support the HTML5 canvas element.
+            </canvas>
+        </center>
+
+        <script type="text/javascript" src="tree.js"></script>
+
+    </body>
+</html>
